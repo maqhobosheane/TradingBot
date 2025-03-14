@@ -109,9 +109,11 @@ def record_trade(action, amount, price, venue, total_value, fee):
 
 # Simulated market data for two trading venues
 def get_market_price_venue1():
+    set.seed(123)
     return random.uniform(0.45, 0.55)  # Random price between 0.45 and 0.55 USD/XRP
 
 def get_market_price_venue2():
+    set.seed(123)
     return random.uniform(0.45, 0.55)  # Random price between 0.45 and 0.55 USD/XRP
 
 # Trading functions
